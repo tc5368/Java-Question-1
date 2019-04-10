@@ -11,7 +11,7 @@ public class DisplayDetails{
     String str;
     while((str = br.readLine()) != null)
     {
-      System.out.println(str + "\n");
+      System.out.println(str);
     }
     br.close();
   }

@@ -44,7 +44,7 @@ public void PickMenu(){
       break;
 
       case 3:
-      System.out.println("\nCreate a new file");
+      System.out.println("\nCreating a new file");
       break;
 
       case 4:
