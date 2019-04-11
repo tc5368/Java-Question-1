@@ -48,27 +48,27 @@ public void PickMenu(){
 			break;
 
 			case 4:
-				System.out.println("Search players\n");
+				System.out.println("Search players by team\n");
 				ShowPlayers find = new ShowPlayers();
-				find.playerSearch();
+				find.teamSearch();
 			break;
 
 			case 5:
 				System.out.println("Delete a player\n");
-				// DeletePlayer deletePlayer = new DeletePlayer();
-				// deletePlayer.delete();
+				DeletingPlayer deletePlayer = new DeletingPlayer();
+				deletePlayer.playerDelete();
 			break;
 
 			case 6:
 				System.out.println("Search a stadium by address\n");
-				// DisplayDetails searchStadium = new DisplayDetails();
-				// searchStadium.searchStadium();
+				ShowPlayers stadiumSearch = new ShowPlayers();
+				stadiumSearch.searchAddress();
 			break;
 
 			case 7:
 				System.out.println("Display specific rugby players\n");
-				// DisplayDetails specificPlayer = new DisplayDetails();
-				// specificPlayer.loadPlayer();
+				ShowPlayers selection = new ShowPlayers();
+				selection.showSomePlayers();
 			break;
 
 			case 8:

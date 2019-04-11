@@ -2,15 +2,13 @@ import java.util.*;
 import java.io.*;
 
 public class ShowPlayers{
-
 	Scanner scanner = new Scanner(System.in);
 
-
-	public List<String> getPlayers(){
+	public ArrayList<String> getPlayers(){
 	try{
 		FileReader fr = new FileReader("players.txt");
 		BufferedReader br = new BufferedReader(fr);
-		List<String> players = new ArrayList<String>();
+		ArrayList<String> players = new ArrayList<String>();
 		String line;
 		while((line = br.readLine()) != null)
 		{
@@ -21,36 +19,120 @@ public class ShowPlayers{
   		}
   	catch(IOException e){
 		System.out.println("File not found");
-		List<String> Empty = new ArrayList<String>();
+		ArrayList<String> Empty = new ArrayList<String>();
 		return (Empty);
-		}}
-
+		}
+	}
 
 
   	public void showAllPlayers(){
-  		List<String> load = getPlayers();
+  		ArrayList<String> load = getPlayers();
 		for (String i : load){
 			System.out.println(i);
+			}
+		System.out.println("\n");
+  	}
+
+  	public void showSomePlayers(){
+  		int startPos = 0;
+		int endPos = 0;
+		boolean found = false;
+		while(found == false){
+			try{
+				System.out.println("Start of the subset: ");
+				int start = Integer.parseInt(scanner.nextLine());
+				System.out.println("End of the subset: ");
+				int end = Integer.parseInt(scanner.nextLine());
+				if (start < end){
+					found = true;
+					startPos = start;
+					endPos = end;
+				}else{System.out.println("Invlaid option try again");}
+			}
+			catch(NumberFormatException e){
+				System.out.println("Invlaid option try again");
+			}
+		}
+  		ArrayList<String> load = getPlayers();
+
+		for (int i = startPos; i < endPos+1; i++){
+			System.out.println(load.get(i));
+			}
+		System.out.println("\n");
+  	}
+
+  	public void teamSearch(){
+  		ArrayList<String> load = getPlayers();
+
+  		System.out.println("Enter Search term below: ");
+  		String searchingFor = scanner.nextLine();
+  		System.out.println("Searching for: " + searchingFor);
+
+		for(String i : load){
+			String[] playerData = i.split(",");
+			if(playerData[3].contains(searchingFor)){
+				System.out.println(i);}
 		}
 		System.out.println("\n");
   	}
 
 
 
-  	public void playerSearch(){
-  		List<String> load = getPlayers();
-  		String[] array = list.toArray();
-
-  		System.out.println("Enter Search term below: ");
+	public void searchAddress(){
+		ArrayList<String> load = getPlayers();
+		System.out.println("Enter Search term below: ");
   		String searchingFor = scanner.nextLine();
-  		System.out.println("Searching for: " + searchingFor);
+		System.out.println("Searching for: " + searchingFor);
 
-		System.out.println("This is where the loop starts");
-		for(int i = 0; i < load.length; i++){
-			System.out.println(load[i]);
-		}
+		for(String i : load){
+			String[] playerData = i.split(",");
+			for(int ix = 5; ix < 9; ix++){
+				if (playerData[ix].toLowerCase().contains(searchingFor.toLowerCase())){
+					System.out.println(i);
+				}
+			}
+		}  	
+	}
 
-  		List<String> load = getPlayers();
-  	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

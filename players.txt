@@ -1,3 +1,10 @@
-Tom Clare RFU00001 1 Cardiff Computer Science CCS0001 Bute Park Near Taly Cardiff A1AA 
-q w 458395432956 q w w e r ty 
-Tim gwert 534 vdsw vw vwe ev ve v 
+Tom Clare,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Harry Batchelor,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Daneil Keyon,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Simon Salvi,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Joe Ede,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Tom Clare,RFU00001,100,Cardiff Computer Science,CSR0001,Another Park,Near Taly,Cardiff,A1AAA,
+Harry Batchelor,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Daneil Keyon,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Simon Salvi,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
+Joe Ede,RFU00001,100,Cardiff Computer Science,CSR0001,Bute Park,Near Taly,Cardiff,A1AAA,
